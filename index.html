@@ -2,80 +2,104 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>Kust CV
-			</title>
+	<title>Kust CV</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body> 
-<table cellspacing="15">
-	<tr>
-		<td>				<img src="Avatar.jpg" width="200" />
-			<td> <h1> Кристина Афанасьева</h1>
-				<p><em>Я решила <strong>научиться программированию</strong> и начала с верстки сайтов</em></p>
-				<p>Я люблю кататься на велосипеде, слушать музыку, своего пса, а еще Украину</p>			 
-			</td>
-		</td>
-	</tr>
-</table>
+		<div class="container">
+		<div class="info">
+					<img src="Avatar.jpg" alt="тут моя фотка" class="avatar"/>
 
- <hr>
+						<div class="info-text">
+							<h1>Кристина Афанасьева</h1>
+							<p>Я решила <strong>научиться программированию</strong> и начала с верстки сайтов</p>
+							<p>Я люблю слушать музыку, своего пса, а еще Украину</p>
 
- <h2>Мои социальные сети</h2>
- <ul type="square">
-	  <li><a href="https://instagram.com/kustik.kiparisik_2.0" target="_blank">Instagram</a></li>
-		<li><a href="https://t.me/kiparisik" target="_blank">Telegram</a></li>
- </ul>
+							<h4>Мои социальные сети</h4>
+									<a href="https://instagram.com/kustik.kiparisik_2.0" target="_blank">Instagram</a>
+									|
+									<a href="https://t.me/kiparisik" target="_blank">Telegram</a>
+						</div>
 
- <hr>
-
- <h2>Мои хобби</h2>
- <ol>
- <li>Езда на велосипеде и на квадах</li>
- <li>Чтение книг</li>
- <li>Рисование в цифром формате</li>
- <li>Просмотр различных сериалов</li>
-</ol>
-<hr>
+					</div>
+  
+		<div class="card bg-yellow">
+	<h2>Мои хобби</h2>
+	<ol class="list">
+	<li>Езда на велосипеде и квадах</li>
+	<li>Чтение книг</li>
+	<li>Рисование в цифром формате</li>
+	<li>Прогулки по лесу со своим псом Аркадием</li>
+	</ol>
+ </div>
+	
+ <div class="card bg-green">
  <h2>Опыт работы</h2>
-<table>
-	<tr>
-		<th>Компания</th>
-		<th>Должность</th>
-		<th>Год</th>
-	</tr>
-			<td>Young Corps</td>
-			<td>Customer Service Manager</td>
-			<td>2019-2021</td>
+	<table class="table">
 		<tr>
-			<td>iPOST</td>
-			<td>Manager of Sales</td>
-			<td>2021-2022</td>
-		</tr>	
-</table>
-<hr>
+		<td>Компания</td>
+			<td>Должность</td>
+			<td>Год</td>
+		</tr>
+			<tr>
+			<td>Advertising agency</td>
+			<td>Customer Support Manager</td>
+			<td>2019-2017</td>
+		</tr>
+		</tr>
+				<td>Young Corps</td>
+				<td>Customer Service Manager</td>
+				<td>2019-2021</td>
+			<tr>
+				<td>iPOST</td>
+				<td>Manager of Sales</td>
+				<td>2021-now</td>
+			</tr>	
+	</table>
+		</div>
 
-	<h2>Мои работы в Pinterest</h2>
-	 <a href="Pinterest.html">Посмотреть доску</a>
-	 <hr>
-	 <h2>Связаться со мной</h2>
-	 <form action="/">
-		 <label for="name">Ваше имя:</label>
-		 <input type="text" id="name"
-		 placeholder="Введите ваше имя...">
-	 
-		 <br>
-	 
-		 <label for="email">Ваш Email:</label>
-		 <input type="email" id="email"
-		 placeholder="Введите ваш Email...">
-	 
-		 <br>
-	 
-		 <label for="text">Ваше сообщение:</label>
-		 <br>
-		 <textarea id="text"></textarea>
-	 
-		 <br>
-		 <input type="submit" value="Связаться">
-	 </form>
+			<div class="card bg-red">
+				<h2>Мои работы в Pinterest</h2>
+			<ul class="link-list">
+		<li>
+			<a href="Pinterest.html">Посмотреть доску</a>
+		</li>
+			</ul>
+		</div>
+
+		<div>
+		<div class="contact">
+			<h2>Связаться со мной</h2>
+		</div>
+
+			<form action="/">
+		<div class="row">
+		<div class="form-group">
+		<label for="name">Ваше имя:
+		</label>
+		<input type="text" id="name"
+		placeholder="Введите ваше имя...">
+		</div>
+
+		<div class="form-group">
+		<label for="email">Ваш email:</label>
+		<input type="email" id="email"
+		placeholder="Введите ваш email...">
+		</div>
+		</div> 
+
+	<div class="form-group"> 
+	<label for="text">Ваше сообщение:</label>
+	<textarea id="text" rows="2" cols="15"></textarea>
+	</div>
+	
+		<input class="btn" type="submit"value="Связаться!">
+
+	</div>
+
+				</form>
+
+		</div>
+
 </body>
 </html>
